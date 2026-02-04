@@ -1,16 +1,93 @@
-# React + Vite
+# 🎬 TMDB API Movie App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+TMDB API Movie App is a web application that allows users to search and explore movies and TV shows. Built with React and Node.js, it fetches real-time data from TMDB API and displays it with a clean, responsive interface using Bootstrap and CSS.
 
-Currently, two official plugins are available:
+---
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **🔍 Search Movies and TV Shows:** Search for movies or TV shows by name.  
+- **🎬 Detailed Information:** View detailed info about a movie or show, including release date and ratings.  
+- **🔥 Discover Popular Content:** Browse trending and popular movies or TV shows.  
+- **⭐ Personalized Lists:** Create and manage watchlists or favorite movies/shows.  
 
-## React Compiler
+---
+## 📸 Screenshots / Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+<p align="center">
+  <img src="screenshots/HomePage.png" width="500" height="400" alt="Homepage Screenshot">
+  <img src="screenshots/HomePage1.png" width="500" height="400" alt="Homepage Screenshot">
+</p>
 
-## Expanding the ESLint configuration
+<p align="center">
+  <img src="screenshots/DetailPage.png" width="500" height="400" alt="Movie Details Screenshot">
+</p>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+<p align="center">
+  <img src="screenshots/Watchlist.png" width="500" height="400" alt="Watchlist Screenshot">
+</p>
+
+<p align="center">
+  <img src="screenshots/SearchMovie.png" width="500" height="400" alt="Search Movie Screenshot">
+</p>
+
+---
+## 🛠 Tech Stack
+
+- **Frontend:** React, Bootstrap, CSS  
+- **Backend:** Node.js  
+- **API:** TMDB (The Movie Database)  
+- **Version Control:** Git & GitHub  
+
+---
+## Getting Started
+
+### Prerequisites
+- [TMDb API Key](https://www.themoviedb.org/documentation/api): Sign up and generate an API key.
+- Node.js and npm installed on your machine.
+
+## 💻 Installation
+
+1. Clone the repository:  
+   ```sh
+   git clone https://github.com/your-username/your-repo-name.git
+   ````
+
+2. Navigate into the project folder:
+   ```sh
+   cd your-repo-name
+   ```
+
+3. Install dependencies:
+   ```sh
+   npm install
+   ```
+
+4. Create a `.env` file in the root directory:
+   ```sh
+   REACT_APP_TMDB_API_KEY=your_api_key_here
+   ```
+
+5. Start the development server (Vite):
+   ```sh
+   npm run dev
+   ```
+
+6. Open your browser at the URL shown in the terminal
+ (usually http://localhost:5173).
+
+## ✨ Usage
+
+* Open your browser and go to `http://localhost:5173`
+* Search for movies or TV shows
+* Click on a movie or show for detailed information
+* Add movies/shows to your watchlist or favorites
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a branch: `git checkout -b feature-name`
+3. Make changes & commit: `git commit -m "Add feature"`
+4. Push to your branch: `git push origin feature-name`
+5. Open a Pull Request
+
+---
