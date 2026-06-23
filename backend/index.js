@@ -118,6 +118,9 @@ app.get("/api/search/movie", async (req, res) => {
   }
 });
 
+app.get("/", (req, res) => {
+  res.send("TMDB Backend API is running...");
+});
 // =================== START SERVER ===================
 // Start the server and listen for incoming requests on the specified port
 app.listen(PORT, () => {
