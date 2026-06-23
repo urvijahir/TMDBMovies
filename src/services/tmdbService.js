@@ -1,6 +1,6 @@
 // =================== CONFIGURATION ===================
 // The base URL is now OUR backend server, not TMDB's
-const BASE_URL = 'http://localhost:3001/api';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 // We no longer need the API key here. The server handles it securely.
 
@@ -12,9 +12,9 @@ const BASE_URL = 'http://localhost:3001/api';
  */
 export const fetchPopularMovies = async () => {
   try {
-    const response = await fetch(`${BASE_URL}/movies/popular`);
+    const response = await fetch(`${API_BASE_URL}/movies/popular`);
     if (!response.ok) {
-      throw new Error('Failed to fetch popular movies');
+      throw new Error("Failed to fetch popular movies");
     }
     const data = await response.json();
     return data.results; // The movie list is in the 'results' property
@@ -29,9 +29,9 @@ export const fetchPopularMovies = async () => {
  */
 export const fetchTopRatedMovies = async () => {
   try {
-    const response = await fetch(`${BASE_URL}/movies/top-rated`);
+    const response = await fetch(`${API_BASE_URL}/movies/top-rated`);
     if (!response.ok) {
-      throw new Error('Failed to fetch top-rated movies');
+      throw new Error("Failed to fetch top-rated movies");
     }
     const data = await response.json();
     return data.results;
@@ -46,9 +46,9 @@ export const fetchTopRatedMovies = async () => {
  */
 export const fetchMovieDetails = async (movieId) => {
   try {
-    const response = await fetch(`${BASE_URL}/movie/${movieId}`);
+    const response = await fetch(`${API_BASE_URL}/movie/${movieId}`);
     if (!response.ok) {
-      throw new Error('Failed to fetch movie details');
+      throw new Error("Failed to fetch movie details");
     }
     const data = await response.json();
     return data;
@@ -65,9 +65,11 @@ export const searchMovies = async (query) => {
   if (!query) return [];
   try {
     // Note the query parameter in the URL
-    const response = await fetch(`${BASE_URL}/search/movie?query=${encodeURIComponent(query)}`);
+    const response = await fetch(
+      `${API_BASE_URL}/search/movie?query=${encodeURIComponent(query)}`,
+    );
     if (!response.ok) {
-      throw new Error('Failed to search movies');
+      throw new Error("Failed to search movies");
     }
     const data = await response.json();
     return data.results;
