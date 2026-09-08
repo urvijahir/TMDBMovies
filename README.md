@@ -1,93 +1,154 @@
 # 🎬 TMDB API Movie App
 
-TMDB API Movie App is a web application that allows users to search and explore movies and TV shows. Built with React and Node.js, it fetches real-time data from TMDB API and displays it with a clean, responsive interface using Bootstrap and CSS.
+A full-stack movie discovery application built with React, Node.js, and Express.js. The application uses the TMDB API to help users discover popular and top-rated movies, search for movies, view detailed information, and manage their favorite movies.
 
----
-## 🚀 Features
+## 🚀 Live Demo
 
-- **🔍 Search Movies and TV Shows:** Search for movies or TV shows by name.  
-- **🎬 Detailed Information:** View detailed info about a movie or show, including release date and ratings.  
-- **🔥 Discover Popular Content:** Browse trending and popular movies or TV shows.  
-- **⭐ Personalized Lists:** Create and manage watchlists or favorite movies/shows.  
+[View Live Demo](https://tmdb-movies-beige.vercel.app)
 
----
-## 📸 Screenshots / Demo
+## ✨ Features
+
+- 🔥 Browse popular movies
+- ⭐ Explore top-rated movies
+- 🔍 Search movies by title
+- 🎬 View detailed movie information
+- ❤️ Add and remove movies from Favorites
+- 📱 Responsive design
+- ⚡ Backend API for handling TMDB API requests
+
+## 📸 Screenshots
 
 <p align="center">
-  <img src="screenshots/HomePage.png" width="500" height="400" alt="Homepage Screenshot">
-  <img src="screenshots/HomePage1.png" width="500" height="400" alt="Homepage Screenshot">
+  <img src="screenshots/HomePage.png" width="500" alt="Home Page">
+  <img src="screenshots/HomePage1.png" width="500" alt="Home Page">
 </p>
 
 <p align="center">
-  <img src="screenshots/DetailPage.png" width="500" height="400" alt="Movie Details Screenshot">
+  <img src="screenshots/DetailPage.png" width="500" alt="Movie Details">
+  <img src="screenshots/Favorites.png" width="500" alt="Favorites">
 </p>
 
 <p align="center">
-  <img src="screenshots/Watchlist.png" width="500" height="400" alt="Watchlist Screenshot">
+  <img src="screenshots/SearchMovie.png" width="500" alt="Search Movies">
 </p>
 
-<p align="center">
-  <img src="screenshots/SearchMovie.png" width="500" height="400" alt="Search Movie Screenshot">
-</p>
-
----
 ## 🛠 Tech Stack
 
-- **Frontend:** React, Bootstrap, CSS  
-- **Backend:** Node.js  
-- **API:** TMDB (The Movie Database)  
-- **Version Control:** Git & GitHub  
+### Frontend
 
----
-## Getting Started
+- React
+- JavaScript
+- Vite
+- Bootstrap
+- React-Bootstrap
+- React Router
+- React Icons
+- CSS
+
+### Backend
+
+- Node.js
+- Express.js
+- Axios
+- CORS
+- dotenv
+
+### API
+
+- TMDB API
+
+### Tools & Deployment
+
+- Git & GitHub
+- Vercel
+- Render
+
+## 📁 Project Structure
+
+```text
+TMDBMovies/
+├── backend/
+├── public/
+├── screenshots/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── services/
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── .gitignore
+├── index.html
+├── package.json
+├── package-lock.json
+├── vite.config.js
+└── README.md
+```
+
+## 🚀 Getting Started
 
 ### Prerequisites
-- [TMDb API Key](https://www.themoviedb.org/documentation/api): Sign up and generate an API key.
-- Node.js and npm installed on your machine.
 
-## 💻 Installation
+- Node.js and npm
 
-1. Clone the repository:  
-   ```sh
-   git clone https://github.com/your-username/your-repo-name.git
-   ````
+### Installation
 
-2. Navigate into the project folder:
-   ```sh
-   cd your-repo-name
-   ```
+1. Clone the repository:
 
-3. Install dependencies:
-   ```sh
-   npm install
-   ```
+```bash
+git clone https://github.com/urvijahir/TMDBMovies.git
+cd TMDBMovies
+```
 
-4. Create a `.env` file in the root directory:
-   ```sh
-   REACT_APP_TMDB_API_KEY=your_api_key_here
-   ```
+2. Install frontend dependencies:
 
-5. Start the development server (Vite):
-   ```sh
-   npm run dev
-   ```
+```bash
+npm install
+```
 
-6. Open your browser at the URL shown in the terminal
- (usually http://localhost:5173).
+3. Start the frontend:
 
-## ✨ Usage
+```bash
+npm run dev
+```
 
-* Open your browser and go to `http://localhost:5173`
-* Search for movies or TV shows
-* Click on a movie or show for detailed information
-* Add movies/shows to your watchlist or favorites
+4. Start the backend in a separate terminal:
 
-## 🤝 Contributing
+```bash
+cd backend
+npm install
+npm start
+```
 
-1. Fork the repository
-2. Create a branch: `git checkout -b feature-name`
-3. Make changes & commit: `git commit -m "Add feature"`
-4. Push to your branch: `git push origin feature-name`
-5. Open a Pull Request
+The frontend will run at the local URL shown in your terminal.
 
----
+### Environment Variables
+
+Create a `.env` file inside the `backend` folder and add your TMDB API key:
+
+```env
+TMDB_API_KEY=your_tmdb_api_key
+```
+
+> Keep your API key private and do not commit the `.env` file to GitHub.
+
+## 🌐 Deployment
+
+- **Frontend:** Vercel
+- **Backend:** Render
+
+## 🔮 Future Improvements
+
+- 🔐 Add user authentication
+- 💾 Persist favorite movies with a database
+- 🔑 Add forgot password and password reset functionality
+- 🎞️ Add movie trailers
+- 🔍 Add advanced movie filtering and sorting
+
+## 👩‍💻 Author
+
+**Urvi Ahir**
+
+Front-End Developer
+
+[GitHub](https://github.com/urvijahir)
